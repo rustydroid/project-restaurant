@@ -336,7 +336,7 @@ h1 {
 
     }
 
-/* End grid */
+
 
 .history {
     padding: 16px;
@@ -365,7 +365,9 @@ h1 {
     .cards__chef p {
         text-align: center;
     }
-/* end card chef */
+
+/* Begin dish grid */
+
 
 footer {
     display: flex;
@@ -427,7 +429,6 @@ footer {
         grid-row: 3/4;
     }
 
-
         /* Begin Sugerencia Chef grid */
     .suchef__grid {
         height: auto;
@@ -435,6 +436,7 @@ footer {
         grid-template-rows: auto;
     }
 
+        /* items of grid */
         .sc1 {
             grid-column: 1/2;
             grid-row: 1/2;
@@ -460,6 +462,7 @@ footer {
             grid-row: 5/6;
         }
 
+        /* Begin Menu grid */
     .menu__grid {
         height: auto;
         grid-template-columns: 1fr;
@@ -523,7 +526,7 @@ footer {
 /* MEDIA query Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
     .header__list {
-        justify-content: ;
+        justify-content: center;
         align-items: center;
     }
 
@@ -557,7 +560,6 @@ footer {
         }
     
     
-
     /* Begin Sugerencia Chef grid */
     .suchef__grid {
         height: auto;
