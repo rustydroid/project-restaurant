@@ -1,0 +1,151 @@
+*{
+    margin: 0px; /* Margen Externo */
+    padding: 0px; /* Margen Interno */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    color: #183153;
+}
+
+/* begin nav panel */
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    width: 60px;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.header__item {
+    padding: 16px;
+    text-decoration: none;
+}
+
+.header__item a {
+    text-decoration: none;
+}
+/* end nav panel */
+
+/* banner on index */
+.main__banner {
+    width: 100vw;
+    background-image: url("../resources/images/banner_index.jpg");
+    height: 405px;
+    background-position: center;
+}
+
+.main__button {
+    border-radius: 6px;
+    width: 100px;
+    height: 50px;
+    background-color: #fcfcfc;
+    margin: 10px;
+    border: solid lightgray 3px;
+}
+
+/* banner for rest of pages */
+.child__banner {
+    width: 100vw;
+    background-image: url("../resources/images/banner_index.jpg");
+    height: 260px;
+    background-position: center;
+}
+
+/* begin contact-us form */
+.container {
+    display: block;
+    margin: 16px;
+}
+
+.container__sep {
+    margin: 5px;
+}
+
+.container textarea {
+    height: 100px;
+}
+/* end contact-us form */
+
+
+.main__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards__food {
+    width: 300px;
+    padding: 16px;
+}
+
+.cards__img {
+    width: 300px;
+    height: 200px;
+}
+
+.cards__food--title {
+    font-size: 30px;
+}
+
+.history {
+    padding: 16px;
+}
+
+.cards__chef {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    padding: 10px;
+    width: 300px;
+}
+
+.cards__chef img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.cards__chef h2{
+    text-align: center;
+}
+
+.cards__chef p {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px;
+}
+
+.footer__list { 
+    display: flex;
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+.footer__img {
+    width: 40px;
+    padding: 5px;
+}
+
+
