@@ -61,7 +61,7 @@ h1 {
 
 /* banner for rest of pages */
 .child__banner {
-    width: 100vw;
+    width: 99vw;
     background-image: url("../resources/images/banner_index.jpg");
     height: 260px;
     background-position: center;
