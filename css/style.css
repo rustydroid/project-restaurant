@@ -14,6 +14,7 @@ h1 {
     color: #183153;
 }
 
+
 /* begin nav panel */
 .header__nav {
     display: flex;
@@ -53,15 +54,18 @@ h1 {
 }
 
 .main__button {
-    border-radius: 6px;
-    width: 100px;
-    height: 50px;
-    background-color: #fcfcfc;
     margin: 10px;
-    border: solid lightgray 3px;
+    background-color: #cfe2ff;
+    color: black;
 }
 
-/* banner for rest of pages */
+    .main__button:hover {
+        background-color: #cfe2ff;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* banner for rest of pages */
 .child__banner {
     width: 100vw;
     background-image: url("../resources/images/banner_index.jpg");
@@ -75,12 +79,9 @@ h1 {
     margin: 16px;
 }
 
-    .container__sep {
-        margin: 5px;
-    }
-
-    .container textarea {
-        height: 100px;
+    .container button {
+        background-color: #cfe2ff;
+        color: black;
     }
 
 /* begin cards definition */

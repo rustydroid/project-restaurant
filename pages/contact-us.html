@@ -44,39 +44,48 @@
         </section>
         <section class="container">
             <form type="" method="get">
-                <div class="container__sep">
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Ingrese su nombre..">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <label for="floatingInput">Nombre</label>
                 </div>
-                <div class="container__sep">
-                    <label>Apellido</label>
-                    <input type="text" placeholder="Ingrese su apellido..">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Apellido">
+                  <label for="floatingInput">Apellido</label>
+                </div>  
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
                 </div>
-                <div class="container__sep">
-                    <label>E-mail </label>
-                    <input type="email" placeholder="Ingrese su e-mail..">
-                </div>
-                <div class="container__sep">
-                    <label>Mensaje</label>
-                    <textarea type="text" placeholder="Ingrese su mensaje.."></textarea>
-                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deje su comentario aqui..." id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comentarios</label>
+                  </div>
+                <div class="mb-3">
+                    <input class="form-check-input" type="checkbox" name="asian_food" value="asian food" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Comida Asiatica
+                    </label>
+                    <input class="form-check-input" type="checkbox" name="street_food" value="street food" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Street Food
+                    </label>
+                    <input class="form-check-input" type="checkbox" name="world_food" value="world food" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        World Food
+                    </label>
+                  </div>
                 <div>
-                    <input type="checkbox" name="asian_food" value="asian food">
-                    <label>Comida Asiatica</label>
-                    <input type="checkbox" name="street_food" value="street food">
-                    <label>Street Food</label>
-                    <input type="checkbox" name="world_food" value="world food">
-                    <label>Comida del Mundo</label>
-                </div>
-                <div>
-                    <select name="options">
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>Selecciona la preferencia</option>
                         <option value="notacc">Sin TACC</option>
                         <option value="nomeat">Vegano</option>
                         <option value="vegetarian">Vegetariano</option>
-                    </select>
+                      </select>
                 </div>
-                <input type="submit" value="Enviar formulario">
-                <input type="reset" value="Borrar formulario">
+                <div class="d-grid gap-2 d-md-block mb-3">
+                    <button class="btn btn-primary main__button" type="submit">Enviar formulario</button>
+                    <button class="btn btn-primary main__button" type="reset">Borrar formulario</button>
+                </div>
             </form>
         </section>
     </main>
