@@ -44,7 +44,9 @@ h1 {
 
 /* banner on index */
 .main__banner {
+    max-width: 100%;
     width: 100vw;
+
     background-image: url("../resources/images/banner_index.jpg");
     height: 405px;
     background-position: center;
