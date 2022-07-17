@@ -45,11 +45,16 @@ h1 {
 
 /* banner on index */
 .main__banner {
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     background-image: url("../resources/images/banner_index.jpg");
-    height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
+    height: 260px;
+    
+
 }
 
 .main__button {
@@ -398,6 +403,9 @@ footer {
         background-image: url("../resources/images/mobile/banner_index.jpg");
     }
 
+        .main__banner h1 {
+            font-size: 75px;
+        }
         /* Begin index grid */
     .index__grid {
         display: grid;
