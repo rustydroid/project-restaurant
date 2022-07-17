@@ -45,9 +45,6 @@ h1 {
 
 /* banner on index */
 .main__banner {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
     background-image: url("../resources/images/banner_index.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,7 +107,6 @@ h1 {
 /* Begin index grid */
 .index__grid {
     display: grid;
-    width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -152,7 +148,6 @@ h1 {
 /* Begin Sugerencia Chef grid */
 .suchef__grid {
     display: grid;
-    width: 100vw;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -188,7 +183,6 @@ h1 {
 /* Begin Menu grid */
 .menu__grid {
     display: grid;
-    width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -331,8 +325,6 @@ h1 {
 
     }
 
-
-
 .history {
     padding: 16px;
 }
@@ -407,15 +399,16 @@ footer {
         .main__banner h1 {
             font-size: 75px;
         }
-        /* Begin index grid */
+        
+    /* Begin index grid */
     .index__grid {
         display: grid;
-        width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
+        /* items of grid */
         .thai {
             grid-column: 1/2;
             grid-row: 1/2;
@@ -557,7 +550,6 @@ footer {
     /* Begin index grid */
     .index__grid {
         display: grid;
-        width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
