@@ -47,9 +47,8 @@ h1 {
 .main__banner {
     max-width: 100%;
     width: 100vw;
-
     background-image: url("../resources/images/banner_index.jpg");
-    height: 405px;
+    height: 260px;
     background-position: center;
 }
 
@@ -65,24 +64,11 @@ h1 {
         font-weight: bold;
     }
 
-    /* banner for rest of pages */
-.child__banner {
-    width: 100vw;
-    background-image: url("../resources/images/banner_index.jpg");
-    height: 260px;
-    background-position: center;
-}
 
 /* begin contact-us form */
 .container {
-    display: block;
     margin: 16px;
 }
-
-    .container button {
-        background-color: #cfe2ff;
-        color: black;
-    }
 
 /* begin cards definition */
 .main__cards {
@@ -408,29 +394,36 @@ footer {
         justify-content: flex-end;
     }
 
-    /* Begin index grid */
-.index__grid {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
-
-    .thai {
-        grid-column: 1/2;
-        grid-row: 1/2;
+    .main__banner {
+        background-image: url("../resources/images/mobile/banner_index.jpg");
     }
 
-    .streetp {
-        grid-column: 1/2;
-        grid-row: 2/3;
+        /* Begin index grid */
+    .index__grid {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 
-    .worldp {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
+        .thai {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-image: url("../resources/images/mobile/thai.jpg");
+        }
+
+        .streetp {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-image: url("../resources/images/mobile/street.jpg");
+        }
+
+        .worldp {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            background-image: url("../resources/images/mobile/world.jpg");
+        }
 
         /* Begin Sugerencia Chef grid */
     .suchef__grid {
@@ -476,51 +469,61 @@ footer {
         .asian {
             grid-column: 1/2;
             grid-row: 1/2;
+            background-image: url("../resources/images/mobile/asian_food.jpg");
         }
         
         .crab {
             grid-column: 1/2;
             grid-row: 2/3;
+            background-image: url("../resources/images/mobile/crab-sticks.jpg");
         }
     
         .lobster {
             grid-column: 1/2;
             grid-row: 3/4;
+            background-image: url("../resources/images/mobile/lobster-sandwich.jpg");
         }
     
         .vegetal {
             grid-column: 1/2;
             grid-row: 4/5;
+            background-image: url("../resources/images/mobile/our-vegetables.jpg");
         }
     
         .dumplings {
             grid-column: 1/2;
             grid-row: 5/6;
+            background-image: url("../resources/images/mobile/dumplings.jpg");
         }
     
         .dishes {
             grid-column: 1/2;
             grid-row: 6/7;
+            background-image: url("../resources/images/mobile/our-dishes.jpg");
         }
     
         .shrimp {
             grid-column: 1/2;
             grid-row: 7/8;
+            background-image: url("../resources/images/mobile/shrimp-pasta.jpg");
         }
     
         .street {
             grid-column: 1/2;
             grid-row: 8/9;
+            background-image: url("../resources/images/mobile/street_food.jpg");
         }
     
         .wagyu {
             grid-column: 1/2;
             grid-row: 9/10;
+            background-image: url("../resources/images/mobile/wagyu-burger.jpg");
         }
     
         .world {
             grid-column: 1/2;
-            grid-row: 10/11
+            grid-row: 10/11;
+            background-image: url("../resources/images/mobile/world_food.jpg");
         }
 
     
@@ -538,6 +541,10 @@ footer {
         justify-content: flex-start;
     }
 
+    .main__banner {
+        background-image: url("../resources/images/mobile/banner_index.jpg");
+    }
+
     /* Begin index grid */
     .index__grid {
         display: grid;
@@ -550,16 +557,19 @@ footer {
         .thai {
             grid-column: 1/2;
             grid-row: 1/2;
+            background-image: url("../resources/images/mobile/thai.jpg");
         }
     
         .streetp {
             grid-column: 1/2;
             grid-row: 2/3;
+            background-image: url("../resources/images/mobile/street.jpg");
         }
     
         .worldp {
             grid-column: 1/2;
             grid-row: 3/4;
+            background-image: url("../resources/images/mobile/world.jpg");
         }
     
     
@@ -606,51 +616,61 @@ footer {
         .asian {
             grid-column: 1/2;
             grid-row: 1/2;
+            background-image: url("../resources/images/mobile/asian_food.jpg")
         }
         
         .crab {
             grid-column: 2/3;
             grid-row: 1/2;
+            background-image: url("../resources/images/mobile/crab-sticks.jpg")
         }
     
         .lobster {
             grid-column: 1/2;
             grid-row: 2/3;
+            background-image: url("../resources/images/mobile/lobster-sandwich.jpg")
         }
     
         .vegetal {
             grid-column: 2/3;
             grid-row: 2/3;
+            background-image: url("../resources/images/mobile/our-vegetables.jpg")
         }
     
         .dumplings {
             grid-column: 1/2;
             grid-row: 3/4;
+            background-image: url("../resources/images/mobile/dumplings.jpg")
         }
     
         .dishes {
             grid-column: 2/3;
             grid-row: 3/4;
+            background-image: url("../resources/images/mobile/our-dishes.jpg")
         }
     
         .shrimp {
             grid-column: 1/2;
             grid-row: 4/5;
+            background-image: url("../resources/images/mobile/shrimp-pasta.jpg")
         }
     
         .street {
             grid-column: 2/3;
             grid-row: 4/5;
+            background-image: url("../resources/images/mobile/street_food.jpg")
         }
     
         .wagyu {
             grid-column: 1/2;
             grid-row: 5/6;
+            background-image: url("../resources/images/mobile/wagyu-burger.jpg")
         }
     
         .world {
             grid-column: 2/3;
-            grid-row: 5/6
+            grid-row: 5/6;
+            background-image: url("../resources/images/mobile/world_food.jpg")
         }
 
 }
