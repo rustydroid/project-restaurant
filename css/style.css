@@ -66,13 +66,6 @@ h1 {
         font-weight: bold;
     }
 
-
-/* begin contact-us form */
-.container {
-    margin-left: 5px;
-    margin-top: 10px;
-}
-
 /* begin cards definition */
 .main__cards {
     display: flex;
