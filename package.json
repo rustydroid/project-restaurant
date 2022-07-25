@@ -1,0 +1,23 @@
+{
+  "name": "project_restaurant",
+  "version": "1.0.0",
+  "description": "<h1>Proyecto Restaurant</h1> <p>Este sitio es para un restaurant incluyendo Menu, Sugerencia del Chef y Crear tu propio plato</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rustydroid/project-restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rustydroid/project-restaurant/issues"
+  },
+  "homepage": "https://github.com/rustydroid/project-restaurant#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
