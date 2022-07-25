@@ -4,6 +4,7 @@
     /* box-sizing: border-box; */
 }
 
+/* ------------- =General -------------- */
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -15,7 +16,7 @@ h1 {
 }
 
 
-/* begin nav panel */
+/* ------------- =Nav Panel -------------- */
 .header__nav {
     display: flex;
     flex-wrap: wrap;
@@ -41,9 +42,9 @@ h1 {
 .header__item a {
     text-decoration: none;
 }
-/* end nav panel */
 
-/* banner on index */
+
+/* ------------- =Banner -------------- */
 .main__banner {
     background-image: url("../resources/images/banner_index.jpg");
     background-repeat: no-repeat;
@@ -66,7 +67,7 @@ h1 {
         font-weight: bold;
     }
 
-/* begin cards definition */
+/* ------------- =Cards Definition -------------- */
 .main__cards {
     display: flex;
     flex-wrap: wrap;
@@ -86,9 +87,9 @@ h1 {
     width: 300px;
     height: 200px;
 }
-/* end cards definition */
 
-/* Menu title */
+
+/* ------------- =Menu Title -------------- */
 .menu__selection {
     text-align: center;
     font-size: 25px;
@@ -97,7 +98,7 @@ h1 {
     color: white;
 }
 
-/* Begin index grid */
+/* ------------- =Index Grid -------------- */
 .index__grid {
     display: grid;
     height: 100vh;
@@ -138,7 +139,7 @@ h1 {
         border: 2px solid white;
     }
 
-/* Begin Sugerencia Chef grid */
+/* ------------- =Sugerencia Chef Grid -------------- */
 .suchef__grid {
     display: grid;
     height: auto;
@@ -173,7 +174,7 @@ h1 {
     }
 
 
-/* Begin Menu grid */
+/* ------------- =Menu Grid -------------- */
 .menu__grid {
     display: grid;
     height: 100vh;
@@ -322,7 +323,7 @@ h1 {
     padding: 16px;
 }
 
-/* begin card chef */
+/* ------------- =Card Chef -------------- */
 .cards__chef {
     display: flex;
     flex-direction: column;
@@ -346,9 +347,8 @@ h1 {
         text-align: center;
     }
 
-/* Begin dish grid */
 
-
+/* ------------- =Footer -------------- */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -367,7 +367,7 @@ footer {
         padding: 5px;
     }
 
-/* MEDIA query phone */
+/* ------------- =MediaQuery Phone -------------- */
 @media (min-width: 320px) and (max-width: 575px) {
     header {
         height: auto;
@@ -393,7 +393,7 @@ footer {
             font-size: 75px;
         }
         
-    /* Begin index grid */
+    /* ------- =MQP Index Grid -------- */
     .index__grid {
         display: grid;
         height: 100vh;
@@ -420,7 +420,7 @@ footer {
             background-image: url("../resources/images/mobile/world.jpg");
         }
 
-        /* Begin Sugerencia Chef grid */
+    /* ------- =MQP Sugerencia Chef Grid -------- */
     .suchef__grid {
         height: auto;
         grid-template-columns: 1fr;
@@ -453,7 +453,7 @@ footer {
             grid-row: 5/6;
         }
 
-        /* Begin Menu grid */
+    /* ------- =MQP Menu Grid -------- */
     .menu__grid {
         height: auto;
         grid-template-columns: 1fr;
@@ -524,7 +524,7 @@ footer {
     
 }
 
-/* MEDIA query Tablet */
+/* ------------- =MediaQuery Tablet -------------- */
 @media (min-width: 576px) and (max-width: 992px) {
     .header__list {
         justify-content: center;
@@ -532,7 +532,6 @@ footer {
     }
 
     .header__nav {
-        /* flex-direction: column; */
         justify-content: flex-start;
     }
 
@@ -540,7 +539,7 @@ footer {
         background-image: url("../resources/images/mobile/banner_index.jpg");
     }
 
-    /* Begin index grid */
+    /* ------- =MQT Index Grid -------- */
     .index__grid {
         display: grid;
         height: 100vh;
@@ -567,7 +566,7 @@ footer {
         }
     
     
-    /* Begin Sugerencia Chef grid */
+    /* ------- =MQT Sugerencia Chef Grid -------- */
     .suchef__grid {
         height: auto;
         grid-template-columns: 1fr 1fr;
@@ -599,7 +598,7 @@ footer {
         grid-row: 3/4;
     }
 
-    /* Begin Menu grid */
+    /* ------- =MQT Menu Grid -------- */
     .menu__grid {
         height: auto;
         grid-template-columns: 1fr 1fr;
