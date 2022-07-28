@@ -1,10 +1,4 @@
-* {
-  margin: 0px;
-  /* Margen Externo */
-  padding: 0px;
-  /* Margen Interno */
-  /* box-sizing: border-box; */ }
-
+/* COLORS */
 /* ------------- =General -------------- */
 body {
   font-family: 'Roboto', sans-serif; }
@@ -36,7 +30,7 @@ h1 {
 .header__item a {
   text-decoration: none; }
 
-/* ------------- =Banner -------------- */
+/* ------------- =Banner & Main card definition-------------- */
 .main__banner {
   background-image: url("../resources/images/banner_index.jpg");
   background-repeat: no-repeat;
@@ -47,76 +41,52 @@ h1 {
 .main__button {
   margin: 10px;
   background-color: #cfe2ff;
-  color: black; }
-
-.main__button:hover {
-  background-color: #cfe2ff;
   color: black;
-  font-weight: bold; }
+  box-shadow: none !important; }
+  .main__button:hover {
+    background-color: #cfe2ff;
+    color: black;
+    font-weight: bold; }
+  .main__button:active {
+    background-color: #cfe2ff;
+    color: black;
+    font-weight: bold;
+    box-shadow: none !important; }
 
-/* ------------- =Cards Definition -------------- */
 .main__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
 
+/* ------------- =Food & Chef Cards Definition -------------- */
 .cards__food {
   width: 300px;
   padding: 16px; }
-
-.cards__food--title {
-  font-size: 30px; }
+  .cards__food--title {
+    font-size: 30px; }
 
 .cards__img {
   width: 300px;
   height: 200px;
   transition: transform .2s; }
+  .cards__img:hover {
+    transform: scale(1.5); }
 
-.cards__img:hover {
-  transform: scale(1.5); }
-
-/* ------------- =Menu Title -------------- */
-.menu__selection {
-  text-align: center;
-  font-size: 25px;
-  margin: 1px;
-  background-color: #5B8291;
-  color: white; }
-
-/* ------------- =Index Grid -------------- */
-.index__grid {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "thai thai none" "none street street" "world world world"; }
-
-.thai {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  background-image: url("../resources/images/thai.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.streetp {
-  grid-column: 2/4;
-  grid-row: 2/3;
-  background-image: url("../resources/images/street.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.worldp {
-  grid-column: 1/4;
-  grid-row: 3/4;
-  background-image: url("../resources/images/world.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
+.cards__chef {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  width: 300px; }
+  .cards__chef img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px; }
+  .cards__chef h2 {
+    text-align: center; }
+  .cards__chef p {
+    text-align: center; }
 
 /* ------------- =Sugerencia Chef Grid -------------- */
 .suchef__grid {
@@ -125,36 +95,126 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "sc1 sc2 sc3 sc4"; }
+  .suchef__grid .sc1 {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .suchef__grid .sc2 {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .suchef__grid .sc3 {
+    grid-column: 3/4;
+    grid-row: 1/2; }
+  .suchef__grid .sc4 {
+    grid-column: 4/5;
+    grid-row: 1/2; }
 
-.sc1 {
-  grid-column: 1/2;
-  grid-row: 1/2; }
+/* ------------- =Menu Title & Grid-------------- */
+.menu__selection {
+  text-align: center;
+  font-size: 25px;
+  margin: 1px;
+  background-color: #5B8291;
+  color: white; }
 
-.sc2 {
-  grid-column: 2/3;
-  grid-row: 1/2; }
-
-.sc3 {
-  grid-column: 3/4;
-  grid-row: 1/2; }
-
-.sc4 {
-  grid-column: 4/5;
-  grid-row: 1/2; }
-
-/* ------------- =Menu Grid -------------- */
 .menu__grid {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "asian crab lobster" "vegetal vegetal vegetal" "dumplings dishes dishes" "shrimp street wagyu" "shrimp world wagyu"; }
+  .menu__grid .asian {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url("../resources/images/asian_food.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .crab {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url("../resources/images/crab-sticks.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .lobster {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url("../resources/images/lobster-sandwich.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .vegetal {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-image: url("../resources/images/our-vegetables.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .dumplings {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url("../resources/images/dumplings.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .dishes {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-image: url("../resources/images/our-dishes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .shrimp {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-image: url("../resources/images/shrimp-pasta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .street {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-image: url("../resources/images/street_food.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .wagyu {
+    grid-column: 3/4;
+    grid-row: 4/6;
+    background-image: url("../resources/images/wagyu-burger.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .menu__grid .world {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    background-image: url("../resources/images/world_food.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
 
 /* small text animation */
 .card__grid {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .card__grid:hover .text {
+    transform: translateY(-5px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 0.5 is the tranparency*/
+    padding: 5px;
+    border-radius: 5%; }
 
 .text {
   color: white;
@@ -164,127 +224,40 @@ h1 {
   transform: translateY(108px);
   opacity: 0; }
 
-.card__grid:hover .text {
-  transform: translateY(-5px);
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* 0.5 is the tranparency*/
-  padding: 5px;
-  border-radius: 5%; }
-
-/* items of grid */
-.asian {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  background-image: url("../resources/images/asian_food.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.crab {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  background-image: url("../resources/images/crab-sticks.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.lobster {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  background-image: url("../resources/images/lobster-sandwich.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.vegetal {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  background-image: url("../resources/images/our-vegetables.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.dumplings {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  background-image: url("../resources/images/dumplings.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.dishes {
-  grid-column: 2/4;
-  grid-row: 3/4;
-  background-image: url("../resources/images/our-dishes.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.shrimp {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  background-image: url("../resources/images/shrimp-pasta.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.street {
-  grid-column: 2/3;
-  grid-row: 4/5;
-  background-image: url("../resources/images/street_food.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.wagyu {
-  grid-column: 3/4;
-  grid-row: 4/6;
-  background-image: url("../resources/images/wagyu-burger.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
-
-.world {
-  grid-column: 1/3;
-  grid-row: 5/6;
-  background-image: url("../resources/images/world_food.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid white; }
+/* ------------- =Index Grid -------------- */
+.index__grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "thai thai none" "none street street" "world world world"; }
+  .index__grid .thai {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url("../resources/images/thai.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .index__grid .streetp {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-image: url("../resources/images/street.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
+  .index__grid .worldp {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-image: url("../resources/images/world.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white; }
 
 .history {
   padding: 16px; }
-
-/* ------------- =Card Chef -------------- */
-.cards__chef {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 10px;
-  width: 300px; }
-
-.cards__chef img {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  width: 200px; }
-
-.cards__chef h2 {
-  text-align: center; }
-
-.cards__chef p {
-  text-align: center; }
 
 /* ------------- =Footer -------------- */
 footer {
@@ -302,6 +275,13 @@ footer {
   width: 40px;
   padding: 5px; }
 
+* {
+  margin: 0px;
+  /* Margen Externo */
+  padding: 0px;
+  /* Margen Interno */
+  /* box-sizing: border-box; */ }
+
 /* ------------- =MediaQuery Phone -------------- */
 @media (min-width: 320px) and (max-width: 575px) {
   header {
@@ -316,91 +296,91 @@ footer {
     justify-content: flex-end; }
   .main__banner {
     background-image: url("../resources/images/mobile/banner_index.jpg"); }
-  .main__banner h1 {
-    font-size: 75px; }
+    .main__banner h1 {
+      font-size: 75px; }
   /* ------- =MQP Index Grid -------- */
   .index__grid {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-  /* items of grid */
-  .thai {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-image: url("../resources/images/mobile/thai.jpg"); }
-  .streetp {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-image: url("../resources/images/mobile/street.jpg"); }
-  .worldp {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url("../resources/images/mobile/world.jpg"); }
+    grid-template-rows: auto;
+    /* items of grid */ }
+    .index__grid .thai {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background-image: url("../resources/images/mobile/thai.jpg"); }
+    .index__grid .streetp {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background-image: url("../resources/images/mobile/street.jpg"); }
+    .index__grid .worldp {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      background-image: url("../resources/images/mobile/world.jpg"); }
   /* ------- =MQP Sugerencia Chef Grid -------- */
   .suchef__grid {
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-  /* items of grid */
-  .sc1 {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-  .sc2 {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .sc3 {
-    grid-column: 1/2;
-    grid-row: 3/4; }
-  .sc4 {
-    grid-column: 1/2;
-    grid-row: 4/5; }
+    grid-template-rows: auto;
+    /* items of grid */ }
+    .suchef__grid .sc1 {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .suchef__grid .sc2 {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+    .suchef__grid .sc3 {
+      grid-column: 1/2;
+      grid-row: 3/4; }
+    .suchef__grid .sc4 {
+      grid-column: 1/2;
+      grid-row: 4/5; }
   /* ------- =MQP Menu Grid -------- */
   .menu__grid {
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-  /* items of grid */
-  .asian {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-image: url("../resources/images/mobile/asian_food.jpg"); }
-  .crab {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-image: url("../resources/images/mobile/crab-sticks.jpg"); }
-  .lobster {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url("../resources/images/mobile/lobster-sandwich.jpg"); }
-  .vegetal {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    background-image: url("../resources/images/mobile/our-vegetables.jpg"); }
-  .dumplings {
-    grid-column: 1/2;
-    grid-row: 5/6;
-    background-image: url("../resources/images/mobile/dumplings.jpg"); }
-  .dishes {
-    grid-column: 1/2;
-    grid-row: 6/7;
-    background-image: url("../resources/images/mobile/our-dishes.jpg"); }
-  .shrimp {
-    grid-column: 1/2;
-    grid-row: 7/8;
-    background-image: url("../resources/images/mobile/shrimp-pasta.jpg"); }
-  .street {
-    grid-column: 1/2;
-    grid-row: 8/9;
-    background-image: url("../resources/images/mobile/street_food.jpg"); }
-  .wagyu {
-    grid-column: 1/2;
-    grid-row: 9/10;
-    background-image: url("../resources/images/mobile/wagyu-burger.jpg"); }
-  .world {
-    grid-column: 1/2;
-    grid-row: 10/11;
-    background-image: url("../resources/images/mobile/world_food.jpg"); } }
+    grid-template-rows: auto;
+    /* items of grid */ }
+    .menu__grid .asian {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background-image: url("../resources/images/mobile/asian_food.jpg"); }
+    .menu__grid .crab {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background-image: url("../resources/images/mobile/crab-sticks.jpg"); }
+    .menu__grid .lobster {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      background-image: url("../resources/images/mobile/lobster-sandwich.jpg"); }
+    .menu__grid .vegetal {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      background-image: url("../resources/images/mobile/our-vegetables.jpg"); }
+    .menu__grid .dumplings {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      background-image: url("../resources/images/mobile/dumplings.jpg"); }
+    .menu__grid .dishes {
+      grid-column: 1/2;
+      grid-row: 6/7;
+      background-image: url("../resources/images/mobile/our-dishes.jpg"); }
+    .menu__grid .shrimp {
+      grid-column: 1/2;
+      grid-row: 7/8;
+      background-image: url("../resources/images/mobile/shrimp-pasta.jpg"); }
+    .menu__grid .street {
+      grid-column: 1/2;
+      grid-row: 8/9;
+      background-image: url("../resources/images/mobile/street_food.jpg"); }
+    .menu__grid .wagyu {
+      grid-column: 1/2;
+      grid-row: 9/10;
+      background-image: url("../resources/images/mobile/wagyu-burger.jpg"); }
+    .menu__grid .world {
+      grid-column: 1/2;
+      grid-row: 10/11;
+      background-image: url("../resources/images/mobile/world_food.jpg"); } }
 
 /* ------------- =MediaQuery Tablet -------------- */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -417,78 +397,78 @@ footer {
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto; }
-  .thai {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-image: url("../resources/images/mobile/thai.jpg"); }
-  .streetp {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-image: url("../resources/images/mobile/street.jpg"); }
-  .worldp {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url("../resources/images/mobile/world.jpg"); }
+    .index__grid .thai {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background-image: url("../resources/images/mobile/thai.jpg"); }
+    .index__grid .streetp {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background-image: url("../resources/images/mobile/street.jpg"); }
+    .index__grid .worldp {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      background-image: url("../resources/images/mobile/world.jpg"); }
   /* ------- =MQT Sugerencia Chef Grid -------- */
   .suchef__grid {
     height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr; }
-  .sc1 {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-  .sc2 {
-    grid-column: 2/3;
-    grid-row: 1/2; }
-  .sc3 {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .sc4 {
-    grid-column: 2/3;
-    grid-row: 2/3; }
+    .suchef__grid .sc1 {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .suchef__grid .sc2 {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .suchef__grid .sc3 {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+    .suchef__grid .sc4 {
+      grid-column: 2/3;
+      grid-row: 2/3; }
   /* ------- =MQT Menu Grid -------- */
   .menu__grid {
     height: auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr); }
-  /* items of grid */
-  .asian {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-image: url("../resources/images/mobile/asian_food.jpg"); }
-  .crab {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-image: url("../resources/images/mobile/crab-sticks.jpg"); }
-  .lobster {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-image: url("../resources/images/mobile/lobster-sandwich.jpg"); }
-  .vegetal {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-image: url("../resources/images/mobile/our-vegetables.jpg"); }
-  .dumplings {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url("../resources/images/mobile/dumplings.jpg"); }
-  .dishes {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-image: url("../resources/images/mobile/our-dishes.jpg"); }
-  .shrimp {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    background-image: url("../resources/images/mobile/shrimp-pasta.jpg"); }
-  .street {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    background-image: url("../resources/images/mobile/street_food.jpg"); }
-  .wagyu {
-    grid-column: 1/2;
-    grid-row: 5/6;
-    background-image: url("../resources/images/mobile/wagyu-burger.jpg"); }
-  .world {
-    grid-column: 2/3;
-    grid-row: 5/6;
-    background-image: url("../resources/images/mobile/world_food.jpg"); } }
+    grid-template-rows: repeat(5, 1fr);
+    /* items of grid */ }
+    .menu__grid .asian {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background-image: url("../resources/images/mobile/asian_food.jpg"); }
+    .menu__grid .crab {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      background-image: url("../resources/images/mobile/crab-sticks.jpg"); }
+    .menu__grid .lobster {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background-image: url("../resources/images/mobile/lobster-sandwich.jpg"); }
+    .menu__grid .vegetal {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      background-image: url("../resources/images/mobile/our-vegetables.jpg"); }
+    .menu__grid .dumplings {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      background-image: url("../resources/images/mobile/dumplings.jpg"); }
+    .menu__grid .dishes {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      background-image: url("../resources/images/mobile/our-dishes.jpg"); }
+    .menu__grid .shrimp {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      background-image: url("../resources/images/mobile/shrimp-pasta.jpg"); }
+    .menu__grid .street {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      background-image: url("../resources/images/mobile/street_food.jpg"); }
+    .menu__grid .wagyu {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      background-image: url("../resources/images/mobile/wagyu-burger.jpg"); }
+    .menu__grid .world {
+      grid-column: 2/3;
+      grid-row: 5/6;
+      background-image: url("../resources/images/mobile/world_food.jpg"); } }

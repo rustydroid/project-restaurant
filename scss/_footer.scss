@@ -1,0 +1,20 @@
+/* ------------- =Footer -------------- */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px;
+}
+
+.footer {
+    &__list { 
+        display: flex;
+        list-style-type: none;
+        flex-grow: 1;
+    }
+
+    &__img {
+        width: 40px;
+        padding: 5px;
+    }
+}

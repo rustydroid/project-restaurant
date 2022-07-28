@@ -1,0 +1,36 @@
+/* ------------- =Banner & Main card definition-------------- */
+.main {
+    &__banner {
+        background-image: url("../resources/images/banner_index.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        
+
+    }
+
+    &__button {
+        margin: 10px;
+        background-color: $button-color;
+        color: black;
+        box-shadow: none !important;
+        &:hover {
+            background-color: $button-color;
+            color: black;
+            font-weight: bold;
+        }
+        &:active {
+            background-color: $button-color;
+            color: black;
+            font-weight: bold;
+            box-shadow: none !important;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+}

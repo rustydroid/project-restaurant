@@ -1,0 +1,43 @@
+/* ------------- =Index Grid -------------- */
+.index__grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "thai thai none"
+                         "none street street"
+                         "world world world";
+    
+    .thai {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-image: url("../resources/images/thai.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid white;
+    }
+
+    .streetp {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        background-image: url("../resources/images/street.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid white;
+    }
+
+    .worldp {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        background-image: url("../resources/images/world.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid white;
+    }
+}
+.history {
+    padding: 16px;
+}

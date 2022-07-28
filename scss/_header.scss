@@ -1,0 +1,28 @@
+/* ------------- =Nav Panel -------------- */
+.header {
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        width: 60px;
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    &__item a {
+        text-decoration: none;
+    }
+}
