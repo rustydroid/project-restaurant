@@ -1,17 +1,17 @@
 /* ------------- =Banner & Main card definition-------------- */
 .main {
     &__banner {
-        background-image: url("../resources/images/banner_index.jpg");
+        background-image: url("../resources/images/mobile/banner_index.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 260px;
+        height: 16.25rem;
         
 
     }
 
     &__button {
-        margin: 10px;
+        margin: 0.625rem;
         background-color: $button-color;
         color: black;
         box-shadow: none !important;

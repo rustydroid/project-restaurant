@@ -9,35 +9,27 @@
                          "world world world";
     
     .thai {
+        @extend .images-grid;
         grid-column: 1/3;
         grid-row: 1/2;
         background-image: url("../resources/images/thai.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 2px solid white;
+
     }
 
     .streetp {
+        @extend .images-grid;
         grid-column: 2/4;
         grid-row: 2/3;
         background-image: url("../resources/images/street.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 2px solid white;
     }
 
     .worldp {
+        @extend .images-grid;
         grid-column: 1/4;
         grid-row: 3/4;
         background-image: url("../resources/images/world.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 2px solid white;
     }
 }
 .history {
-    padding: 16px;
+    padding: 1rem;
 }

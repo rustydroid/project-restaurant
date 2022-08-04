@@ -1,11 +1,18 @@
 /* COLORS */
+/* EXTEND */
+.images-grid, .menu__grid .asian, .menu__grid .crab, .menu__grid .lobster, .menu__grid .vegetal, .menu__grid .dumplings, .menu__grid .dishes, .menu__grid .shrimp, .menu__grid .street, .menu__grid .wagyu, .menu__grid .world, .index__grid .thai, .index__grid .streetp, .index__grid .worldp {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0.125rem solid white; }
+
 /* ------------- =General -------------- */
 body {
   font-family: 'Roboto', sans-serif; }
 
 h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 100px;
+  font-size: 6.25rem;
   color: #183153; }
 
 /* ------------- =Nav Panel -------------- */
@@ -14,7 +21,7 @@ h1 {
   flex-wrap: wrap; }
 
 .header__logo {
-  width: 60px; }
+  width: 3.75rem; }
 
 .header__list {
   display: flex;
@@ -24,7 +31,7 @@ h1 {
   justify-content: flex-end; }
 
 .header__item {
-  padding: 16px;
+  padding: 1rem;
   text-decoration: none; }
 
 .header__item a {
@@ -32,14 +39,14 @@ h1 {
 
 /* ------------- =Banner & Main card definition-------------- */
 .main__banner {
-  background-image: url("../resources/images/banner_index.jpg");
+  background-image: url("../resources/images/mobile/banner_index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 260px; }
+  height: 16.25rem; }
 
 .main__button {
-  margin: 10px;
+  margin: 0.625rem;
   background-color: #cfe2ff;
   color: black;
   box-shadow: none !important; }
@@ -60,14 +67,14 @@ h1 {
 
 /* ------------- =Food & Chef Cards Definition -------------- */
 .cards__food {
-  width: 300px;
-  padding: 16px; }
+  width: 18.75rem;
+  padding: 1rem; }
   .cards__food--title {
-    font-size: 30px; }
+    font-size: 1.875rem; }
 
 .cards__img {
-  width: 300px;
-  height: 200px;
+  width: 18.75rem;
+  height: 12.5rem;
   transition: transform .2s; }
   .cards__img:hover {
     transform: scale(1.5); }
@@ -76,13 +83,13 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 10px;
-  width: 300px; }
+  padding: 0.625rem;
+  width: 18.75rem; }
   .cards__chef img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    width: 200px; }
+    width: 12.5rem; }
   .cards__chef h2 {
     text-align: center; }
   .cards__chef p {
@@ -111,8 +118,8 @@ h1 {
 /* ------------- =Menu Title & Grid-------------- */
 .menu__selection {
   text-align: center;
-  font-size: 25px;
-  margin: 1px;
+  font-size: 1.563rem;
+  margin: 0.063rem;
   background-color: #5B8291;
   color: white; }
 
@@ -125,83 +132,43 @@ h1 {
   .menu__grid .asian {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-image: url("../resources/images/asian_food.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/asian_food.jpg"); }
   .menu__grid .crab {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-image: url("../resources/images/crab-sticks.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/crab-sticks.jpg"); }
   .menu__grid .lobster {
     grid-column: 3/4;
     grid-row: 1/2;
-    background-image: url("../resources/images/lobster-sandwich.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/lobster-sandwich.jpg"); }
   .menu__grid .vegetal {
     grid-column: 1/4;
     grid-row: 2/3;
-    background-image: url("../resources/images/our-vegetables.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/our-vegetables.jpg"); }
   .menu__grid .dumplings {
     grid-column: 1/2;
     grid-row: 3/4;
-    background-image: url("../resources/images/dumplings.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/dumplings.jpg"); }
   .menu__grid .dishes {
     grid-column: 2/4;
     grid-row: 3/4;
-    background-image: url("../resources/images/our-dishes.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/our-dishes.jpg"); }
   .menu__grid .shrimp {
     grid-column: 1/2;
     grid-row: 4/5;
-    background-image: url("../resources/images/shrimp-pasta.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/shrimp-pasta.jpg"); }
   .menu__grid .street {
     grid-column: 2/3;
     grid-row: 4/5;
-    background-image: url("../resources/images/street_food.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/street_food.jpg"); }
   .menu__grid .wagyu {
     grid-column: 3/4;
     grid-row: 4/6;
-    background-image: url("../resources/images/wagyu-burger.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/wagyu-burger.jpg"); }
   .menu__grid .world {
     grid-column: 1/3;
     grid-row: 5/6;
-    background-image: url("../resources/images/world_food.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/world_food.jpg"); }
 
 /* small text animation */
 .card__grid {
@@ -209,19 +176,19 @@ h1 {
   justify-content: center;
   align-items: center; }
   .card__grid:hover .text {
-    transform: translateY(-5px);
+    transform: translateY(-0.313rem);
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
     /* 0.5 is the tranparency*/
-    padding: 5px;
+    padding: 0.313rem;
     border-radius: 5%; }
 
 .text {
   color: white;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 100;
   transition: 2s ease;
-  transform: translateY(108px);
+  transform: translateY(6.75rem);
   opacity: 0; }
 
 /* ------------- =Index Grid -------------- */
@@ -234,37 +201,25 @@ h1 {
   .index__grid .thai {
     grid-column: 1/3;
     grid-row: 1/2;
-    background-image: url("../resources/images/thai.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/thai.jpg"); }
   .index__grid .streetp {
     grid-column: 2/4;
     grid-row: 2/3;
-    background-image: url("../resources/images/street.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/street.jpg"); }
   .index__grid .worldp {
     grid-column: 1/4;
     grid-row: 3/4;
-    background-image: url("../resources/images/world.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid white; }
+    background-image: url("../resources/images/world.jpg"); }
 
 .history {
-  padding: 16px; }
+  padding: 1rem; }
 
 /* ------------- =Footer -------------- */
 footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 16px; }
+  padding: 1rem; }
 
 .footer__list {
   display: flex;
@@ -272,8 +227,8 @@ footer {
   flex-grow: 1; }
 
 .footer__img {
-  width: 40px;
-  padding: 5px; }
+  width: 2.5rem;
+  padding: 0.313rem; }
 
 * {
   margin: 0px;
@@ -297,7 +252,7 @@ footer {
   .main__banner {
     background-image: url("../resources/images/mobile/banner_index.jpg"); }
     .main__banner h1 {
-      font-size: 75px; }
+      font-size: 4.688rem; }
   /* ------- =MQP Index Grid -------- */
   .index__grid {
     display: grid;
