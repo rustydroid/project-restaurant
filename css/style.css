@@ -255,6 +255,14 @@ footer {
     .main__banner h1 {
       font-size: 4.66rem;
       text-align: center; }
+  .card__grid .text {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 0.5 is the tranparency*/
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.313rem;
+    border-radius: 5%; }
   /* ------- =MQP Index Grid -------- */
   .index__grid {
     display: grid;
@@ -359,6 +367,14 @@ footer {
     justify-content: flex-start; }
   .main__banner {
     background-image: url("../resources/images/mobile/banner_index.jpg"); }
+  .card__grid .text {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 0.5 is the tranparency*/
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.313rem;
+    border-radius: 5%; }
   /* ------- =MQT Index Grid -------- */
   .index__grid {
     display: grid;
