@@ -30,6 +30,20 @@
         background-image: url("../resources/images/world.jpg");
     }
 }
+
+.card__index {
+    @extend .card__grid;
+}
+.text {
+    color: white;
+    font-size: 2.188rem;
+    font-weight: 100;
+    transition: 2s ease;
+    transform: translateY(6.75rem);
+    opacity: 0;
+}
+
+
 .history {
     padding: 1rem;
 }

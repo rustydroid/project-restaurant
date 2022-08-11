@@ -6,6 +6,18 @@
   background-repeat: no-repeat;
   border: 0.125rem solid white; }
 
+.card__grid, .card__index {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .card__grid:hover .text, .card__index:hover .text {
+    transform: translateY(-0.313rem);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 0.5 is the tranparency*/
+    padding: 0.313rem;
+    border-radius: 5%; }
+
 /* ------------- =General -------------- */
 body {
   font-family: 'Roboto', sans-serif; }
@@ -172,11 +184,11 @@ h1 {
     background-image: url("../resources/images/world_food.jpg"); }
 
 /* small text animation */
-.card__grid {
+.card__grid, .card__index {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .card__grid:hover .text {
+  .card__grid:hover .text, .card__index:hover .text {
     transform: translateY(-0.313rem);
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
@@ -211,6 +223,14 @@ h1 {
     grid-column: 1/4;
     grid-row: 3/4;
     background-image: url("../resources/images/world.jpg"); }
+
+.text {
+  color: white;
+  font-size: 2.188rem;
+  font-weight: 100;
+  transition: 2s ease;
+  transform: translateY(6.75rem);
+  opacity: 0; }
 
 .history {
   padding: 1rem; }
@@ -255,18 +275,20 @@ footer {
     .main__banner h1 {
       font-size: 4.66rem;
       text-align: center; }
-  .card__grid .text {
+  .card__grid .text, .card__index .text {
+    opacity: 1;
+    display: contents;
+    color: white; }
+  .card__grid h2, .card__index h2 {
     background-color: rgba(0, 0, 0, 0.5);
     /* 0.5 is the tranparency*/
-    color: white;
-    font-size: 1rem;
-    font-weight: 100;
-    padding: 0.313rem;
-    border-radius: 5%; }
+    font-weight: 400; }
+  .card__index {
+    display: none; }
   /* ------- =MQP Index Grid -------- */
   .index__grid {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     /* items of grid */ }
@@ -281,7 +303,8 @@ footer {
     .index__grid .worldp {
       grid-column: 1/2;
       grid-row: 3/4;
-      background-image: url("../resources/images/mobile/world.jpg"); }
+      background-image: url("../resources/images/mobile/world.jpg");
+      height: auto; }
   /* ------- =MQP Sugerencia Chef Grid -------- */
   .suchef__grid {
     height: auto;
@@ -317,43 +340,53 @@ footer {
     .menu__grid .asian {
       grid-column: 1/2;
       grid-row: 1/2;
-      background-image: url("../resources/images/mobile/asian_food.jpg"); }
+      background-image: url("../resources/images/mobile/asian_food.jpg");
+      height: 5rem; }
     .menu__grid .crab {
       grid-column: 1/2;
       grid-row: 2/3;
-      background-image: url("../resources/images/mobile/crab-sticks.jpg"); }
+      background-image: url("../resources/images/mobile/crab-sticks.jpg");
+      height: 5rem; }
     .menu__grid .lobster {
       grid-column: 1/2;
       grid-row: 3/4;
-      background-image: url("../resources/images/mobile/lobster-sandwich.jpg"); }
+      background-image: url("../resources/images/mobile/lobster-sandwich.jpg");
+      height: 5rem; }
     .menu__grid .vegetal {
       grid-column: 1/2;
       grid-row: 4/5;
-      background-image: url("../resources/images/mobile/our-vegetables.jpg"); }
+      background-image: url("../resources/images/mobile/our-vegetables.jpg");
+      height: 5rem; }
     .menu__grid .dumplings {
       grid-column: 1/2;
       grid-row: 5/6;
-      background-image: url("../resources/images/mobile/dumplings.jpg"); }
+      background-image: url("../resources/images/mobile/dumplings.jpg");
+      height: 5rem; }
     .menu__grid .dishes {
       grid-column: 1/2;
       grid-row: 6/7;
-      background-image: url("../resources/images/mobile/our-dishes.jpg"); }
+      background-image: url("../resources/images/mobile/our-dishes.jpg");
+      height: 5rem; }
     .menu__grid .shrimp {
       grid-column: 1/2;
       grid-row: 7/8;
-      background-image: url("../resources/images/mobile/shrimp-pasta.jpg"); }
+      background-image: url("../resources/images/mobile/shrimp-pasta.jpg");
+      height: 5rem; }
     .menu__grid .street {
       grid-column: 1/2;
       grid-row: 8/9;
-      background-image: url("../resources/images/mobile/street_food.jpg"); }
+      background-image: url("../resources/images/mobile/street_food.jpg");
+      height: 5rem; }
     .menu__grid .wagyu {
       grid-column: 1/2;
       grid-row: 9/10;
-      background-image: url("../resources/images/mobile/wagyu-burger.jpg"); }
+      background-image: url("../resources/images/mobile/wagyu-burger.jpg");
+      height: 5rem; }
     .menu__grid .world {
       grid-column: 1/2;
       grid-row: 10/11;
-      background-image: url("../resources/images/mobile/world_food.jpg"); }
+      background-image: url("../resources/images/mobile/world_food.jpg");
+      height: 5rem; }
   footer {
     display: flex;
     flex-direction: column; } }
@@ -367,14 +400,18 @@ footer {
     justify-content: flex-start; }
   .main__banner {
     background-image: url("../resources/images/mobile/banner_index.jpg"); }
-  .card__grid .text {
+  .card__grid .text, .card__index .text {
+    opacity: 1;
+    display: contents;
+    color: white; }
+  .card__grid h2, .card__index h2 {
     background-color: rgba(0, 0, 0, 0.5);
     /* 0.5 is the tranparency*/
-    color: white;
-    font-size: 1rem;
-    font-weight: 100;
-    padding: 0.313rem;
-    border-radius: 5%; }
+    font-weight: 400; }
+  .card__index h2 {
+    padding-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 0.5 is the tranparency*/ }
   /* ------- =MQT Index Grid -------- */
   .index__grid {
     display: grid;

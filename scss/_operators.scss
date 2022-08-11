@@ -5,3 +5,16 @@
     background-repeat: no-repeat;
     border: 0.125rem solid $menu-grid-color;
 }
+
+.card__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover .text {
+        transform: translateY(-0.313rem);
+        opacity: 1;
+        background-color: rgba(0,0,0,0.5); /* 0.5 is the tranparency*/
+        padding: 0.313rem;
+        border-radius: 5%;
+    }
+}
