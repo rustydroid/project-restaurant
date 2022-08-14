@@ -309,8 +309,7 @@ footer {
   .suchef__grid {
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    /* items of grid */ }
+    grid-template-rows: auto; }
     .suchef__grid .sc1 {
       grid-column: 1/2;
       grid-row: 1/2;
